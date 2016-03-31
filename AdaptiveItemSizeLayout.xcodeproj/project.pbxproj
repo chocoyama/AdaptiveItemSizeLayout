@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD10DE5F1CAC3E1C00AFF83D /* AdaptiveSizeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD10DE5E1CAC3E1C00AFF83D /* AdaptiveSizeCollectionViewCell.swift */; };
 		ADD297DA1CAC1C9800DD5398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD297D91CAC1C9800DD5398 /* AppDelegate.swift */; };
 		ADD297DC1CAC1C9800DD5398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD297DB1CAC1C9800DD5398 /* ViewController.swift */; };
 		ADD297DF1CAC1C9800DD5398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD297DD1CAC1C9800DD5398 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		ADD297E41CAC1C9800DD5398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD297E21CAC1C9800DD5398 /* LaunchScreen.storyboard */; };
 		ADD297EF1CAC1C9800DD5398 /* AdaptiveItemSizeLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD297EE1CAC1C9800DD5398 /* AdaptiveItemSizeLayoutTests.swift */; };
 		ADD297FA1CAC1C9800DD5398 /* AdaptiveItemSizeLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD297F91CAC1C9800DD5398 /* AdaptiveItemSizeLayoutUITests.swift */; };
+		ADD298081CAC1EBC00DD5398 /* AdaptiveItemSizeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD298071CAC1EBC00DD5398 /* AdaptiveItemSizeLayout.swift */; };
+		ADD2980A1CAC265200DD5398 /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD298091CAC265200DD5398 /* Column.swift */; };
+		ADD2980C1CAC266700DD5398 /* ColumnContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD2980B1CAC266700DD5398 /* ColumnContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD10DE5E1CAC3E1C00AFF83D /* AdaptiveSizeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveSizeCollectionViewCell.swift; sourceTree = "<group>"; };
 		ADD297D61CAC1C9800DD5398 /* AdaptiveItemSizeLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveItemSizeLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD297D91CAC1C9800DD5398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD297DB1CAC1C9800DD5398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		ADD297F51CAC1C9800DD5398 /* AdaptiveItemSizeLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveItemSizeLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD297F91CAC1C9800DD5398 /* AdaptiveItemSizeLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveItemSizeLayoutUITests.swift; sourceTree = "<group>"; };
 		ADD297FB1CAC1C9800DD5398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD298071CAC1EBC00DD5398 /* AdaptiveItemSizeLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveItemSizeLayout.swift; sourceTree = "<group>"; };
+		ADD298091CAC265200DD5398 /* Column.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
+		ADD2980B1CAC266700DD5398 /* ColumnContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD10DE5D1CAC3DF600AFF83D /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				ADD298071CAC1EBC00DD5398 /* AdaptiveItemSizeLayout.swift */,
+				ADD298091CAC265200DD5398 /* Column.swift */,
+				ADD2980B1CAC266700DD5398 /* ColumnContainer.swift */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
 		ADD297CD1CAC1C9800DD5398 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +115,10 @@
 		ADD297D81CAC1C9800DD5398 /* AdaptiveItemSizeLayout */ = {
 			isa = PBXGroup;
 			children = (
+				AD10DE5D1CAC3DF600AFF83D /* Layout */,
 				ADD297D91CAC1C9800DD5398 /* AppDelegate.swift */,
 				ADD297DB1CAC1C9800DD5398 /* ViewController.swift */,
+				AD10DE5E1CAC3E1C00AFF83D /* AdaptiveSizeCollectionViewCell.swift */,
 				ADD297DD1CAC1C9800DD5398 /* Main.storyboard */,
 				ADD297E01CAC1C9800DD5398 /* Assets.xcassets */,
 				ADD297E21CAC1C9800DD5398 /* LaunchScreen.storyboard */,
@@ -257,7 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD297DC1CAC1C9800DD5398 /* ViewController.swift in Sources */,
+				ADD2980A1CAC265200DD5398 /* Column.swift in Sources */,
+				ADD2980C1CAC266700DD5398 /* ColumnContainer.swift in Sources */,
 				ADD297DA1CAC1C9800DD5398 /* AppDelegate.swift in Sources */,
+				ADD298081CAC1EBC00DD5398 /* AdaptiveItemSizeLayout.swift in Sources */,
+				AD10DE5F1CAC3E1C00AFF83D /* AdaptiveSizeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +506,7 @@
 				ADD298001CAC1C9800DD5398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADD298011CAC1C9800DD5398 /* Build configuration list for PBXNativeTarget "AdaptiveItemSizeLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +515,7 @@
 				ADD298031CAC1C9800DD5398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADD298041CAC1C9800DD5398 /* Build configuration list for PBXNativeTarget "AdaptiveItemSizeLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +524,7 @@
 				ADD298061CAC1C9800DD5398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
